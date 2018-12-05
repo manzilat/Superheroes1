@@ -38,7 +38,7 @@ namespace SuperHeroes1.Controllers
 
         }
         // GET: SuperHero/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(int? id)
         {
             SuperHero superHero = db.SuperHero.Find(id);
             return View(superHero);
