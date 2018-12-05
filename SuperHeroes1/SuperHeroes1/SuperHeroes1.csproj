@@ -269,6 +269,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\SuperHero\Index.cshtml" />
     <Content Include="Views\SuperHero\Details.cshtml" />
+    <Content Include="Views\SuperHero\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
