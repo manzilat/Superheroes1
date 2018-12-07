@@ -19,7 +19,8 @@ namespace SuperHeroes1.Controllers
         // GET: SuperHero/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            SuperHero superhero = db.SuperHero.Find(id);
+            return View(superhero);
         }
         // GET: SuperHero/Create
         public ActionResult Create()
@@ -65,6 +66,24 @@ namespace SuperHeroes1.Controllers
                 return RedirectToAction("Index");
             }
             return View(superHero);
+        }
+        // GET: SuperHero/Delete/5
+        public ActionResult Delete(int id)
+        {
+            SuperHero superHero = db.SuperHero.Find(id);
+            return View(superHero);
+        }
+
+        // POST: SuperHero/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirm(int id)
+        {
+            SuperHero superHero = db.SuperHero.Find(id);
+            db.SuperHero.Remove(superHero);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+
         }
 
     }
