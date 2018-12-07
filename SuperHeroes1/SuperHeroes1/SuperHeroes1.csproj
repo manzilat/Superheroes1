@@ -217,6 +217,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="pictures\2356332-bigthumbnail.jpg" />
+    <Content Include="pictures\backgroung.jpg" />
     <Content Include="pictures\batman.jpg" />
     <Content Include="pictures\captain america and iron man.png" />
     <Content Include="pictures\deadpool.gif" />
